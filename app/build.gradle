@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'android-aop'
 
 android {
     compileSdkVersion 25
@@ -26,4 +27,6 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.2.0'
     testCompile 'junit:junit:4.12'
+    compile 'org.aspectj:aspectjrt:1.8.1'
+    provided 'org.aspectj:aspectjtools:1.8.1'
 }
