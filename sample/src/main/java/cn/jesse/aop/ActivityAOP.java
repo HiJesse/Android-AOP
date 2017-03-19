@@ -26,7 +26,7 @@ public class ActivityAOP {
 
 
     @Around("activityOnCreate()")
-    public void activityOnCreateTrigered(ProceedingJoinPoint joinPoint) throws Throwable{
+    public void activityOnCreateTriggered(ProceedingJoinPoint joinPoint) throws Throwable{
         String targetClassName = joinPoint.getTarget().getClass().getName();
         String signatureName = joinPoint.getSignature().getName();
         Log.d(TAG, targetClassName + " " + signatureName + " before");
@@ -43,7 +43,7 @@ public class ActivityAOP {
     }
 
     @Before("activityOnResume()")
-    public void activityOnResumeTrigered(JoinPoint joinPoint) {
+    public void activityOnResumeTriggered(JoinPoint joinPoint) {
         String targetClassName = joinPoint.getTarget().getClass().getName();
         String signatureName = joinPoint.getSignature().getName();
         Log.d(TAG, targetClassName + " " + signatureName + " before");
