@@ -2,9 +2,9 @@ apply plugin: 'groovy'
 //apply from: '../deploy.gradle'
 
 dependencies {
-    compile gradleApi()
-    compile localGroovy()
-    compile 'org.aspectj:aspectjtools:1.8.9'
+    implementation gradleApi()
+    implementation localGroovy()
+    implementation 'org.aspectj:aspectjtools:1.9.5'
 }
 
 sourceSets {
