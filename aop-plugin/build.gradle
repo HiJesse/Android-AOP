@@ -1,6 +1,9 @@
 apply plugin: 'groovy'
 //apply from: '../deploy.gradle'
 
+targetCompatibility = JavaVersion.VERSION_1_7
+sourceCompatibility = JavaVersion.VERSION_1_7
+
 dependencies {
     implementation gradleApi()
     implementation localGroovy()
